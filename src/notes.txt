@@ -88,37 +88,159 @@ k = 5
             1 + 4n
             2 + 4n
 
+k = 6
+    group 0
+        0 <= n <= 15
+            0 + 4n
+            3 + 4n
 
+    group 1
+        n = 0
+            1 + 4n
+            2 + 4n
 
-        0    xxxxx
-            1   xxxxy
-            2   xxxyx
-        3   xxxyy
-        4   xxyxx
-                        5   xxyxy   xyxyx
-                        6   xxyyx
-        7   xxyyy
-        8   xyxxx
-                        9   xyxxy   yxxyx   xxyxy
-                        10  xyxyx   xyxxy
-        11  xyxyy
-        12  xyyxx
-                            13  xyyxy   yyxyx   yxyxy
-                            14  xyyyx   yyxxy
-        15  xyyyy
-        16  yxxxx
-                        17  yxxxy   xxyyx
-                        18  yxxyx   xxyxy   xyxyx
-        19  yxxyy
-        20  yxyxx
-                            21  yxyxy   yxyyx
-                            22  yxyyx   xyyxy   yyxyx
-        23  yxyyy
-        24  yyxxx
-                            25  yyxxy
-                            26  yyxyx   yxyxy
-        27  yyxyy
-        28  yyyxx
-                29  yyyxy
-                30  yyyyx
-        31  yyyyy
+    group 2
+        n = 1, 2, 4, 8
+            1 + 4n
+            2 + 4n
+
+    group 3
+        n = 3, 5, 6, 9, 10, 12
+            1 + 4n
+            2 + 4n
+
+    group 4
+        n = 7, 11, 13, 14
+            1 + 4n
+            2 + 4n
+
+    group 5
+        n = 15
+            1 + 4n
+            2 + 4n
+
+k
+x = 2 ^ (k - 2) - 1
+    group 0
+        0 <= n <= x
+            0 + 4n
+            3 + 4n
+
+    group 1
+        n = 0
+            1 + 4n
+            2 + 4n
+
+    group 2
+        n = 2^0, 2^1, 2^i, 2^x
+            1 + 4n
+            2 + 4n
+
+    group k - 2
+        n = x - group 2 n
+            1 + 4n
+            2 + 4n
+
+    group k - 1
+        n = x
+            1 + 4n
+            2 + 4n
+
+0  XXXXXX !
+  1  XXXXXY !
+  2  XXXXYX !
+3  XXXXYY !
+4  XXXYXX !
+    5  XXXYXY 10 XXYXYX !
+    6  XXXYYX !
+7  XXXYYY !
+8  XXYXXX !
+    9  XXYXXY 18 XYXXYX !
+    10  XXYXYX !
+11  XXYXYY !
+12  XXYYXX !
+  13  XXYYXY 26 XYYXYX !
+  14  XXYYYX !
+15  XXYYYY !
+16  XYXXXX !
+    17  XYXXXY 34 YXXXYX !
+    18  XYXXYX 9 XXYXXY !
+19  XYXXYY !
+20  XYXYXX !
+  21  XYXYXY 42 YXYXYX !
+  22  XYXYYX 25 XYYXXY !
+23  XYXYYY !
+24  XYYXXX !
+  25  XYYXXY 50 YYXXYX 37 YXXYXY !
+  26  XYYXYX 41 YXYXXY !
+27  XYYXYY !
+28  XYYYXX !
+  29  XYYYXY 58 YYYXYX 53 YYXYXY !
+  30  XYYYYX 57 YYYXXY !
+31  XYYYYY !
+32  YXXXXX !
+    33  YXXXXY 6 XXXYYX !
+    34  YXXXYX 5 XXXYXY 10 XXYXYX !
+35  YXXXYY !
+36  YXXYXX !
+  37  YXXYXY 22 XYXYYX !
+  38  YXXYYX 13 XXYYXY 26 XYYXYX !
+39  YXXYYY !
+40  YXYXXX !
+  41  YXYXXY 38 YXXYYX !
+  42  YXYXYX 21 XYXYXY !
+43  YXYXYY !
+44  YXYYXX !
+  45  YXYYXY 54 YYXYYX !
+  46  YXYYYX 29 XYYYXY 58 YYYXYX !
+47  YXYYYY !
+48  YYXXXX !
+  49  YYXXXY !
+  50  YYXXYX 37 YXXYXY !
+51  YYXXYY !
+52  YYXYXX !
+  53  YYXYXY !
+  54  YYXYYX 45 YXYYXY !
+55  YYXYYY !
+56  YYYXXX !
+  57  YYYXXY !
+  58  YYYXYX 53 YYXYXY !
+59  YYYXYY !
+60  YYYYXX !
+  61  YYYYXY !
+  62  YYYYYX !
+63  YYYYYY !
+
+k = 5
+0    xxxxx
+    1   xxxxy
+    2   xxxyx
+3   xxxyy
+4   xxyxx
+                5   xxyxy   xyxyx
+                6   xxyyx
+7   xxyyy
+8   xyxxx
+                9   xyxxy   yxxyx   xxyxy
+                10  xyxyx   xyxxy
+11  xyxyy
+12  xyyxx
+                    13  xyyxy   yyxyx   yxyxy
+                    14  xyyyx   yyxxy
+15  xyyyy
+16  yxxxx
+                17  yxxxy   xxyyx
+                18  yxxyx   xxyxy   xyxyx
+19  yxxyy
+20  yxyxx
+                    21  yxyxy   yxyyx
+                    22  yxyyx   xyyxy   yyxyx
+23  yxyyy
+24  yyxxx
+                    25  yyxxy
+                    26  yyxyx   yxyxy
+27  yyxyy
+28  yyyxx
+        29  yyyxy
+        30  yyyyx
+31  yyyyy
