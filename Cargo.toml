@@ -1,0 +1,6 @@
+[package]
+name = "lie_math"
+version = "0.1.0"
+authors = ["Kiley Owen <owenk@wit.edu>"]
+
+[dependencies]

@@ -1,0 +1,124 @@
+k = 1
+    x
+    y
+
+k = 2
+    group 0
+        2^0 - 1 || 2^0 - 1
+        0 <= n <= 0
+            0 + 4n
+            3 + 4n
+
+    group 1
+        2^0 -1 || 2^0 - 1
+        0 <= n <= 0
+            1 + 4n
+            2 + 4n
+
+k = 3
+    group 0
+        2^0 - 1 || 2^1 - 1
+        0 <= n <= 1
+            0 + 4n
+            3 + 4n
+
+    group 1
+        2^0 - 1 || 2^0 - 1
+        0 <= n <= 0
+            1 + 4n
+            2 + 4n
+
+    group 2
+        2^1 - 1 || 2^1 - 1
+        1 <= n <= 1
+            1 + 4n
+            2 + 4n
+
+k = 4
+    group 0
+        2^0 - 1 || 2^2 - 1
+        0 <= n <= 3
+            0 + 4n
+            3 + 4n
+
+    group 1
+        2^0 -1 || 2^0 -1
+        0 <= n <= 0
+            1 + 4n
+            2 + 4n
+
+    group 2
+        2^1 - 1 || 2^1 - 0
+        n = 1, 2
+            1 + 4n
+            2 + 4n
+
+    group 3
+        2^2 -1 || 2^2 - 1
+        3 <= n <= 3
+            1 + 4n
+            2 + 4n
+
+k = 5
+    group 0
+        2^1 - 1 || 2^3 - 1
+        0 <= n <= 7
+            0 + 4n
+            3 + 4n
+
+    group 1
+        2^0 - 1 || 2^0 - 1
+        n = 0
+            1 + 4n
+            2 + 4n
+
+    group 2
+        n = 1, 2, 4
+        1 + 4n
+        2 + 4n
+
+    group 3
+        n = 3, 5, 6
+        1 + 4n
+        2 + 4n
+
+    group 4
+        2^3 - 1 || 2^0 - 1
+        n = 7
+            1 + 4n
+            2 + 4n
+
+
+
+        0    xxxxx
+            1   xxxxy
+            2   xxxyx
+        3   xxxyy
+        4   xxyxx
+                        5   xxyxy   xyxyx
+                        6   xxyyx
+        7   xxyyy
+        8   xyxxx
+                        9   xyxxy   yxxyx   xxyxy
+                        10  xyxyx   xyxxy
+        11  xyxyy
+        12  xyyxx
+                            13  xyyxy   yyxyx   yxyxy
+                            14  xyyyx   yyxxy
+        15  xyyyy
+        16  yxxxx
+                        17  yxxxy   xxyyx
+                        18  yxxyx   xxyxy   xyxyx
+        19  yxxyy
+        20  yxyxx
+                            21  yxyxy   yxyyx
+                            22  yxyyx   xyyxy   yyxyx
+        23  yxyyy
+        24  yyxxx
+                            25  yyxxy
+                            26  yyxyx   yxyxy
+        27  yyxyy
+        28  yyyxx
+                29  yyyxy
+                30  yyyyx
+        31  yyyyy
